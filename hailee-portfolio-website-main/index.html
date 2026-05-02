@@ -626,34 +626,33 @@ Dynamic Full-Stack Developer specializing in the MERN stack, dedicated to crafti
                 </div>
 
                 <div class="contact__content">
-                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
 
-                    <form action="https://formspree.io/f/your-unique-id" method="POST" class="contact__form"></form>
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" name="name" placeholder="Enter name" class="contact__form-input" required>
-                        </div>
+    <!-- REMOVE the </form> from the line below -->
+    <form action="https://formspree.io/f/your-unique-id" method="POST" class="contact__form">
+        
+        <div class="contact__form-div">
+            <label for="" class="contact__form-tag">Name</label>
+            <input type="text" name="name" placeholder="Enter name" class="contact__form-input" required>
+        </div>
 
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Mail</label>
-                           <input type="email" name="email" placeholder="Enter email" class="contact__form-input" required>
-                        </div>
+        <div class="contact__form-div">
+            <label for="" class="contact__form-tag">Mail</label>
+            <input type="email" name="email" placeholder="Enter email" class="contact__form-input" required>
+        </div>
 
-                        <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">Message</label>
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Write your Message" class="contact__form-input"></textarea>
-                        </div>
+        <div class="contact__form-div contact__form-area">
+            <label for="" class="contact__form-tag">Message</label>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Write your Message" class="contact__form-input"></textarea>
+        </div>
 
-
-                        <button class="button">
-                            Send Message
-                        </button>
-                    </form>
-
-                </div>
-
-        </section>
-    </main>
+        <!-- Added type="submit" to ensure the button triggers the form -->
+        <button type="submit" class="button">
+            Send Message
+        </button>
+        
+    </form> <!-- This is the only place the form should close -->
+</div>
 
     <!--=============== FOOTER ===============-->
     <footer class="footer">
